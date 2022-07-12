@@ -1,0 +1,224 @@
+<html>
+    <head>
+        <style>
+*{padding: 0; margin:0; box-sizing: border-box;}
+html{ scroll-behavior: smooth; }
+
+header{
+	width: 100%;
+	min-height: 100vh;
+	font-family: sans-serif;
+}
+.nav1{
+	width: 100%;
+	height: 30px;
+	background: black;
+	color: white;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 70px;
+	flex-wrap: wrap;
+}
+.nav1 a{
+	text-decoration: none;
+	color: white;
+	padding: 10px 20px;
+	border-right: 1px solid white;
+}
+.nav2{
+	width: 100%;
+	height: 130px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 70px;
+}
+.logo{
+	font-size: 3em;
+	font-weight: bold;
+	letter-spacing: 2px;
+}
+.logo span{
+	color: #3498db;
+}
+.icons i{
+	font-size: 20px;
+	padding: 10px;
+	margin: 0 15px;
+	border:1px solid grey;
+	border-radius: 8px;
+	cursor: pointer;
+	transition: 0.4s;
+}
+.icons i:hover{
+	background: #3498db;
+	color: white;
+}
+.nav3{
+	width: 90%;
+	height: 50px;
+	background: rgba(0,0,0,0.1);
+	display: flex;
+	justify-content: space-between;align-items: center;
+	padding: 0 50px;
+	margin:auto;
+}
+.nav3 a{
+	text-decoration: none;
+	color: black;
+	padding: 10px 20px;
+	transition: 0.4s;
+}
+.nav3 a:first-child{
+	background: #3498db;
+	color: white;
+}
+.nav3 a:hover{
+	background: #3498db;
+	color: white;
+}
+#featured{
+	width: 100%;
+	height: 100%;
+	font-family: 'Poppins', sans-serif;
+}
+.f-container{
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	align-items: flex-start;
+}
+.f-left{
+	flex-basis: 40%;
+	position: relative;
+}
+.f-right{
+	flex-basis: 40%;
+}
+.f-right img{
+	width:60%;
+}
+.f-left img{
+	width: 100%;
+}
+.f-left .text{
+	position: absolute;
+	top:30px;
+	right: 30px;
+}
+.text p{
+	color:#3498db;
+	font-size: 25px;
+	margin-bottom: 5px;
+}
+.shoes{
+	position: relative;
+	
+}
+.shoes .text{
+	position: absolute;
+	right: 30px;
+	top:30px;
+}
+.fr-container{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	text-align: center;
+}
+.fr-container #kuchbhi{
+	position: relative;
+}
+#kuchbhi .text{
+	position: absolute;
+	top:0;
+	right: 30px;
+}
+
+#kuchbhi img{
+	width:100%;
+}
+</style>
+</head>
+<body>
+
+
+	<header>
+		<nav class="nav1">
+			<div>
+			<a href="#">Help</a>
+			<a href="#">Delivery</a>
+			<a href="#">Contact</a>
+			</div>
+			<div>
+				Call Us : 62657412**
+			</div>
+		</nav>
+
+		<nav class="nav2">
+			<div class="logo">
+				<span>Holesale</span> Shop
+		
+		</nav>
+
+		<nav class="nav3">
+			<a href="#">Home</a>
+			<a href="#">Sweater</a>
+			<a href="#">Shoes</a>
+			<a href="#">New Arrivals</a>
+			<a href="#">T-Shirt's</a>
+			<a href="#">Glasses</a>
+			<a href="#">Watches</a>
+			<a href="#">More</a>
+		
+		</nav>
+
+		<section id="featured">
+			<div class="f-container">
+				<div class="f-left">
+					<img src="https://5.imimg.com/data5/SELLER/Default/2020/10/CD/IZ/IY/12789060/mens-jackets-500x500.jpg">
+					<div class="text">
+				<p>MEN'S JACKET</p>
+				<span>View Collection <i class="fa fa-arrow-right"></i> </span>
+			</div>
+
+				</div>
+				<div class="f-right">
+					<div class="shoes">
+					<img src="https://m.media-amazon.com/images/I/71D9ImsvEtL._UY500_.jpg">
+					<div class="text">
+				<p>MAN'S SHOES</p>
+			<span>View Collection <i class="fa fa-arrow-right"></i> </span>
+			</div>
+				</div>
+		
+		<div class="fr-container">
+			<div>
+				<img src="https://images.dailyobjects.com/marche/product-images/1203/dailyobjects-tan-vegan-leather-orbis-crossbody-bag-images/DailyObjects-Tan-Vegan-Leather-Orbis-Crossbody-Bag-vw.png?tr=cm-pad_resize,w-768,h-657,dpr-1">
+			
+			</div>
+		
+		<div id="kuchbhi">
+			<img src="https://www.izipizi.com/6329-thickbox_default/d-sun-black-sunglasses.jpg" >
+			<div class="text">
+				<p>GLASSES</p>
+				<span>View Collection <i class="fa fa-arrow-right"></i> </span>
+		</div>
+		</div>
+		</div>
+
+			</div>
+			</div>
+		</section>
+
+	</header>
+
+
+</body>
+</html>
+
+
+
+
