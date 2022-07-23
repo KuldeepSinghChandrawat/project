@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content=
+        "width=device-width, initial-scale=1.0">
+    <title>Responsive Animated Card</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+            text-transform: capitalize;
+            transition: all 0.3 linear;
+        }
+        .container{
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            background-color: antiquewhite;
+            background-image: linear-gradient(90deg, #74ebd5 0%, #9face6 100%);
+
+        }
+        .box{
+            width: 310px;
+            height: 465px;
+            background-color: #firebrick;
+            border-radius: 6px;
+            padding: 25px;
+            padding-top: 85;
+            margin: 25px;
+            text-align: center;
+            letter-spacing: 1.1px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 1.0);
+            overflow: hidden;
+            position: relative;
+            z-index: 0;
+        }
+        .box h3{
+            font-size: 37px;
+            padding: 25px 0;
+            color: #788;
+            }
+            .box p{
+                font-size: 16px;
+                color: #488;
+            }
+            .box button{
+                width: 145px;
+                height: 45px;
+                background-color: #377;
+                color: #peachpuff;
+                border: none;
+                outline: none;
+                font-size:18px ;
+                cursor: pointer;
+                border-radius: 51px;
+                margin-top: 45px;
+
+            }
+            .box button:hover{
+                letter-spacing: 2px;
+                opacity: .9;
+            }
+            .box::before{
+                width: 100%;
+                height: 100%;
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: -1;
+            }
+            .box::after{
+                width: 100%;
+                height: 100%;
+                background-color: #FBDA61;
+                background-image: linear-gradient(90deg,#FBDA61 0%, #FF5ACD 100%);
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: -2;
+                clip-path: circle(20% at 90% 10%);
+                transition: -2s;
+
+            }
+            .box .count{
+                position: absolute;
+                top: 15px;
+                right: 30px;
+                font-size: 50px;
+                font-weight: bolder;
+                color: lightgreen;
+
+            }
+            .box:nth-child(2):after{
+                background-color: skyblue;
+                background-image: linear-gradient(45deg, green 0%, yellow 100%);
+            }
+             .box:nth-child(3):after{
+                background-color: sandybrown;
+                background-image: linear-gradient(150deg, blue 0%, green 100%);
+
+            }
+                .box:hover::after{
+                    clip-path:circle(100%);
+                }
+                .box:hover h3{
+                    color:#fff;
+                }
+                .box:hover p{
+                    color: #fff;
+
+                }
+                .box:hover button{
+                    color: #338;
+                    background-color: #fff;
+                }
+                .box:hover::before{
+                    background-color: rgba(0,0,0,.1);
+                }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <h3>Card</h3>
+            <P>
+                <h4>HTML</h4><br/>
+                HTML stands for Hyper Text Markup Language
+                HTML is the standard markup language for creating Web pages
+                HTML describes the structure of a Web page
+                HTML consists of a series of elements
+                HTML elements tell the browser how to display the content
+                HTML is the standard markup language .
+
+.
+            </P>
+            <a herf="#"><button>Click Here</button></a>
+            <span class="count">1</span>
+        </div>
+        <div class="box">
+            <h3>Card</h3>
+            <P>
+                <h4>css</h4><br/>
+                CSS stands for Cascading Style Sheets
+                CSS describes how HTML elements are to be displayed on screen, paper, or in other media
+                CSS saves a lot of work. It can control the layout of multiple web pages all at once
+                External stylesheets are stored in CSS files
+                
+            </P>
+            <a herf="#"><button>Click Here</button></a>
+            <span class="count">2</span>
+        </div>
+        <div class="box">
+            <h3>Card</h3>
+            <P>
+                <h4>JavaScript</h4><br/>
+                JavaScript is the world's most popular programming language.
+
+JavaScript is the programming language of the Web.
+
+JavaScript is easy to learn.
+
+This tutorial will teach you JavaScript from basic to advanced.
+
+
+                
+                JavaScript can calculate, manipulate and validate data.
+            </P>
+            <a herf="#"><button>Click Here</button></a>
+            <span class="count">3</span>
+        </div>
+    </div>
+    
+</body>
